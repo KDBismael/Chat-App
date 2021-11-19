@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./asset/favico.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Chat </title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="users-list-section">
+            <div class="currentUser">
+                <div class="user">
+                    <img src="./asset/user.jpg" width="50px" height="50px" class="currentAvatar" alt="User">
+                    <span>KDB ismael</span>
+                </div>
+            </div>
+            <div class="userMessage">
+                <h3 class="subtitle">Contact</h3>
+                <div class="user-list-item">
+                    <img src="./asset/user.jpg" width="50px" height="50px" class="image-avatar" alt="User">
+                    <span>Username me</span>
+                    <span class="coutMessage"><img src="./asset/checkmark-circle-outline.svg" width="10px" height="10px" alt=""></span>
+                </div>
+                <div class="user-list-item">
+                    <img src="./asset/user.jpg" width="50px" height="50px" class="image-avatar" alt="User">
+                    <span>Username me</span>
+                    <span class="coutMessage"><img src="./asset/checkmark-circle-outline.svg" width="10px" height="10px" alt=""></span>
+                </div>
+                <!--here it is to add new contact-->
+            </div>
+        </div>
+        <div class="chat-section">
+            <div class="sender-info">
+                <p>Chat</p>
+            </div>
+            <div class="chat-content">
+                <!-- Message item which is use to represent message coming from the current user -->
+                <div class="chat-item chat-item-sender">
+                    <div class="sender">
+                        <img src="./asset/user.jpg" width="50px" height="50px" class="image-avatar" alt="User">
+                        <span>Username me</span>
+                    </div>
+                    <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, molestias.
+                    </p>
+                </div>
+                <!-- Message item which is use to represent message coming from another user -->
+                <div class="chat-item chat-item-reciever">
+                    <div class="reciever sender">
+                        <span>Username me</span>
+                        <img src="./asset/user.jpg" width="50px" height="50px" class="image-avatar" alt="User">
+                    </div>
+                    <p class="messageR">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, molestias.
+                    </p>
+                </div>
+            </div>
+            <div class="chat-text-field-box">
+                <form action="" class="chat-form">
+                    <div class="voiceNote"><svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" class="ionicon" viewBox="0 0 512 512"><title>Mic</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M192 448h128M384 208v32c0 70.4-57.6 128-128 128h0c-70.4 0-128-57.6-128-128v-32M256 368v80"/><path d="M256 64a63.68 63.68 0 00-64 64v111c0 35.2 29 65 64 65s64-29 64-65V128c0-36-28-64-64-64z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg></div>
+                    <textarea placeholder="write a message ..." class="messageWrite"></textarea>
+                    <div class="option"><svg xmlns="http://www.w3.org/2000/svg" width="19px" height="19px" class="ionicon" viewBox="0 0 512 512"><title>Add</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 112v288M400 256H112"/></svg></div>
+                    <div class="send"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="ionicon" viewBox="0 0 512 512"><title>Send</title><path d="M470.3 271.15L43.16 447.31a7.83 7.83 0 01-11.16-7V327a8 8 0 016.51-7.86l247.62-47c17.36-3.29 17.36-28.15 0-31.44l-247.63-47a8 8 0 01-6.5-7.85V72.59c0-5.74 5.88-10.26 11.16-8L470.3 241.76a16 16 0 010 29.39z" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg></div>
+                </form>
+                <div class="optionModal">
+                    <div class="modalContent">
+                        <!--add here evrything that you want-->
+                        <div class="callIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="ionicon" viewBox="0 0 512 512"><title>Videocam</title><path d="M374.79 308.78L457.5 367a16 16 0 0022.5-14.62V159.62A16 16 0 00457.5 145l-82.71 58.22A16 16 0 00368 216.3v79.4a16 16 0 006.79 13.08z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M268 384H84a52.15 52.15 0 01-52-52V180a52.15 52.15 0 0152-52h184.48A51.68 51.68 0 01320 179.52V332a52.15 52.15 0 01-52 52z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                        </div>
+                        <div class="paintIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="ionicon" viewBox="0 0 512 512"><title>Paint</title><path d="M321.89 171.42C233 114 141 155.22 56 65.22c-19.8-21-8.3 235.5 98.1 332.7 77.79 71 197.9 63.08 238.4-5.92s18.28-163.17-70.61-220.58zM173 253c86 81 175 129 292 147" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                        </div>
+                    </div>
+                    <div class="triangle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
